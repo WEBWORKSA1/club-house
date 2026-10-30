@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Club Organizer Toolkit — Dues, Agendas, Bylaws, Events | Club.House</title>
+<meta name="description" content="Free tools for club organizers: dues calculator, meeting agenda builder, bylaws template generator, event ticket price planner and club name generator. No sign-up.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://club.house/toolkit.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Free Club Organizer Toolkit — Dues, Agendas, Bylaws, Events | Club.House"><meta property="og:description" content="Free tools for club organizers: dues calculator, meeting agenda builder, bylaws template generator, event ticket price planner and club name generator. No sign-up."><meta property="og:url" content="https://club.house/toolkit.html"><meta property="og:site_name" content="Club.House"><meta property="og:image" content="https://club.house/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f5c47">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script>try{var t=localStorage.getItem('ch-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website/domain name/Sponsorship/Advertisement/Partnership</a></div>
+<header class="site-header"><nav class="wrap nav" aria-label="Main">
+<a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1f5c47"/><path d="M8 20 20 9l12 11" fill="none" stroke="#f2c46d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 18v13h16V18" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><circle cx="20" cy="24" r="3" fill="#f2c46d"/></svg><span>Club<b>.</b>House</span></a>
+<ul class="menu" id="menu"><li><a href="find-a-club.html">Find a Club</a></li><li><a href="start-a-club.html">Start a Club</a></li><li><a href="toolkit.html">Toolkit</a></li><li><a href="guides.html">Guides</a></li><li><a href="videos.html">Videos</a></li><li><a href="contests.html">Contests</a></li><li><a href="careers.html">Careers</a></li><li><a href="support.html">Support</a></li><li><a href="get-matched.html" class="btn btn-accent btn-sm" style="color:#1c2420">Get Matched</a></li></ul>
+<div class="nav-actions"><a href="list-your-club.html" class="btn btn-primary btn-sm">List your club</a><button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">☾</button><button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</nav></header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="index.html">Home</a> / Toolkit</div><span class="eyebrow">Free toolkit</span><h1>The organizer toolkit</h1><p class="lead">Six free tools that handle the boring parts of running a club. Everything runs privately in your browser — nothing is stored on our servers.</p></div></section>
+<section style="padding-top:0"><div class="wrap grid g2">
+<div class="tool" id="dues"><h2>💵 Dues calculator</h2><form id="duesForm" onsubmit="return false">
+<div class="form-row"><div><label for="d_cur">Currency</label><select id="d_cur"><option>$</option><option>€</option><option>£</option><option>₹</option><option>C$</option><option>A$</option></select></div><div><label for="d_members">Expected members</label><input id="d_members" type="number" value="25" min="1"></div></div>
+<div class="form-row"><div><label for="d_venue">Venue / month</label><input id="d_venue" type="number" value="60" min="0"></div><div><label for="d_software">Software / month</label><input id="d_software" type="number" value="10" min="0"></div></div>
+<div class="form-row"><div><label for="d_events">Events / year</label><input id="d_events" type="number" value="400" min="0"></div><div><label for="d_insurance">Insurance / year</label><input id="d_insurance" type="number" value="250" min="0"></div></div>
+<div class="form-row"><div><label for="d_misc">Other / year</label><input id="d_misc" type="number" value="150" min="0"></div><div><label for="d_reserve">Reserve %</label><input id="d_reserve" type="number" value="12" min="0" max="50"></div></div>
+<label for="d_dropout">Expected non-payers %</label><input id="d_dropout" type="number" value="15" min="0" max="80">
+</form><div class="result" id="d_out"></div></div>
+
+<div class="tool" id="agenda"><h2>🗒️ Meeting agenda builder</h2><form id="agendaForm">
+<label for="a_name">Club name</label><input id="a_name" placeholder="Thursday Night Readers">
+<div class="form-row"><div><label for="a_date">Date</label><input id="a_date" type="date"></div><div><label for="a_time">Start time</label><input id="a_time" type="time" value="19:00"></div></div>
+<label for="a_len">Length (minutes)</label><input id="a_len" type="number" value="60" min="15">
+<label for="a_items">Main topics (one per line)</label><textarea id="a_items">Discussion: this month's pick
+Vote on next month's book</textarea>
+<button class="btn btn-primary" type="submit">Build agenda</button> <button type="button" class="btn btn-ghost hidden" id="a_copy">Copy</button></form>
+<div class="result" id="a_out" style="font-family:ui-monospace,monospace;font-weight:500;font-size:.9rem"></div></div>
+</div></section>
+<div class="ad-space" aria-hidden="true"></div>
+<section style="padding-top:0"><div class="wrap grid g2">
+<div class="tool" id="bylaws"><h2>📜 Bylaws starter</h2><form id="bylawsForm">
+<label for="b_name">Club name</label><input id="b_name" placeholder="Riverside Chess Circle">
+<label for="b_purpose">Purpose ("The purpose is to…")</label><input id="b_purpose" placeholder="promote chess for players of all levels">
+<div class="form-row"><div><label for="b_who">Who can join</label><input id="b_who" placeholder="anyone aged 16+"></div><div><label for="b_dues">Dues</label><input id="b_dues" placeholder="$40 per year"></div></div>
+<div class="form-row"><div><label for="b_term">Officer term</label><input id="b_term" placeholder="one-year"></div><div><label for="b_freq">Meeting frequency</label><input id="b_freq" placeholder="monthly"></div></div>
+<div class="form-row"><div><label for="b_quorum">Quorum</label><input id="b_quorum" placeholder="one-third"></div><div><label for="b_limit">Two-officer approval above</label><input id="b_limit" placeholder="$200"></div></div>
+<label for="b_dissolve">On dissolution, donate funds to</label><input id="b_dissolve" placeholder="a local charity chosen by members">
+<button class="btn btn-primary" type="submit">Generate bylaws</button> <button type="button" class="btn btn-ghost hidden" id="b_copy">Copy</button></form>
+<div class="result" id="b_out" style="font-weight:500;font-size:.88rem;max-height:420px;overflow:auto"></div></div>
+
+<div>
+<div class="tool" id="event"><h2>🎟️ Event ticket planner</h2><form id="eventForm" onsubmit="return false">
+<div class="form-row"><div><label for="e_att">Expected attendees</label><input id="e_att" type="number" value="60"></div><div><label for="e_venue">Venue cost</label><input id="e_venue" type="number" value="500"></div></div>
+<div class="form-row"><div><label for="e_food">Food per person</label><input id="e_food" type="number" value="12"></div><div><label for="e_av">AV / equipment</label><input id="e_av" type="number" value="150"></div></div>
+<div class="form-row"><div><label for="e_prizes">Prizes / gifts</label><input id="e_prizes" type="number" value="100"></div><div><label for="e_marketing">Marketing</label><input id="e_marketing" type="number" value="80"></div></div>
+<div class="form-row"><div><label for="e_sponsor">Sponsorship income</label><input id="e_sponsor" type="number" value="300"></div><div><label for="e_profit">Profit goal</label><input id="e_profit" type="number" value="400"></div></div>
+</form><div class="result" id="e_out"></div></div>
+<div class="tool mt" id="names"><h2>✨ Club name generator</h2><form id="nameForm"><div class="form-row"><div><label for="n_key">Keyword</label><input id="n_key" placeholder="Readers, Runners, Chess…"></div><div><label for="n_city">City / area</label><input id="n_city" placeholder="Riverside"></div></div><button class="btn btn-primary" type="submit">Generate names</button></form><div id="n_out" class="mt"></div></div>
+</div></div></section>
+<section><div class="wrap article"><h2>How to use these tools well</h2><p>The dues calculator assumes some members won't pay — that's the single most common budgeting mistake new treasurers make. The agenda builder reserves time for welcomes and open discussion because meetings that are all business lose newcomers. The bylaws starter is a draft, not legal advice: if your club handles significant money, signs leases or applies for grants, check the requirements for associations or nonprofits where you operate.</p><p>Outgrowing spreadsheets? Read <a href="guide-club-management-software.html">how to choose club management software</a> or let us <a href="get-matched.html">match you with options</a>.</p></div></section>
+<section><div class="wrap"><div class="band reveal"><div><h2>Need software, a venue, insurance or a website for your club?</h2><p>Tell us what you need in 60 seconds. We'll hand-match you with vetted options that fit your size and budget — free, no spam, no obligation.</p></div><div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-accent" href="get-matched.html">Get matched free →</a><a class="btn btn-ghost" href="list-your-club.html">List your club</a></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="fgrid">
+<div><a class="logo" href="index.html" style="color:#fff"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1f5c47"/><path d="M8 20 20 9l12 11" fill="none" stroke="#f2c46d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 18v13h16V18" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><circle cx="20" cy="24" r="3" fill="#f2c46d"/></svg><span>Club<b>.</b>House</span></a>
+<p style="margin-top:14px;font-size:.95rem">The independent home base for people who start, run and join clubs — book clubs, run clubs, chess, service, hobby and community groups worldwide.</p>
+<form class="newsletter" data-form="Newsletter" data-ok="You're in! Watch your inbox for The Clubhouse Letter."><div class="hp"><input name="_honey" tabindex="-1" autocomplete="off"></div><input type="email" name="email" placeholder="Your email" required aria-label="Email for newsletter"><button class="btn btn-accent btn-sm" type="submit">Join</button><div class="form-msg"></div></form>
+<p style="font-size:.8rem;margin-top:8px">Free monthly letter: new tools, guides & contests. Unsubscribe anytime.</p></div>
+<div><h4>Explore</h4><ul><li><a href="find-a-club.html">Find a Club</a></li><li><a href="start-a-club.html">Start a Club</a></li><li><a href="toolkit.html">Organizer Toolkit</a></li><li><a href="club-quiz.html">Club Match Quiz</a></li><li><a href="videos.html">Videos</a></li></ul></div>
+<div><h4>Learn</h4><ul><li><a href="guides.html">All Guides</a></li><li><a href="guide-grow-club-membership.html">Grow Membership</a></li><li><a href="guide-club-management-software.html">Club Software</a></li><li><a href="guide-club-fundraising-ideas.html">Fundraising Ideas</a></li><li><a href="guide-club-insurance-basics.html">Insurance Basics</a></li></ul></div>
+<div><h4>Get involved</h4><ul><li><a href="get-matched.html">Get Matched (free)</a></li><li><a href="list-your-club.html">List Your Club</a></li><li><a href="contests.html">Contests & Prizes</a></li><li><a href="careers.html">Careers</a></li><li><a href="support.html">Support Us</a></li><li><a href="advertise.html">Advertise & Sponsor</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="disclaimer.html">Trademark & Copyright</a></li><li><a href="https://web.works/contact" target="_blank" rel="noopener">Buy / Partner</a></li></ul></div>
+</div>
+<div class="legal"><p>© <span data-year>2026</span> Club.House. All rights reserved. Original content on this site is protected by copyright. Club.House is an independent publication and is <strong>not affiliated with, endorsed by, or connected to</strong> the "Clubhouse" social audio app, its owners, or any other company using the word "clubhouse" in its name or marks. All third-party names and logos belong to their respective owners and are used for identification only. <a href="disclaimer.html">Full disclosure</a>.</p>
+<p>Some outbound links and "Get Matched" introductions may earn us a referral fee at no cost to you. This site displays advertising from Google AdSense. <a href="privacy.html#ads">How ads & cookies work</a>.</p></div>
+</div></footer>
+<button class="icon-btn to-top" id="toTop" aria-label="Back to top">↑</button>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie notice"><strong>Cookies & ads</strong><p>We use cookies to run this site, measure traffic and show ads via Google AdSense. You can accept personalised ads or keep it to essential cookies. See our <a href="privacy.html">Privacy Policy</a>.</p><div class="btns"><button class="btn btn-primary btn-sm" data-consent="all">Accept all</button><button class="btn btn-ghost btn-sm" data-consent="essential">Essential only</button></div></div>
+<script src="assets/js/main.js" defer></script><script src="assets/js/tools.js" defer></script>
+</body>
+</html>
